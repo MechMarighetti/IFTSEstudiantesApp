@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/white">
+
+<TextView
+    android:id="@+id/tv_welcome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginStart="36dp"
+    android:layout_marginTop="700dp"
+    android:text="bienvenido, Nombre"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/btn_assignments"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginTop="16dp"
+    android:backgroundTint="@color/black"
+    android:text="Vencimientos de TP"
+    app:layout_constraintTop_toBottomOf="@+id/btnCalificaciones"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:layout_editor_absoluteX="115dp" />
+
+<Button
+    android:id="@+id/btnAbout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginTop="16dp"
+    android:backgroundTint="@color/black"
+    android:text="Acerca de"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnAsistencia"
+    tools:layout_editor_absoluteX="115dp" />
+
+<Button
+    android:id="@+id/btnCalificaciones"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginTop="80dp"
+    android:backgroundTint="@color/black"
+    android:text="Ver Calificaciones"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+    tools:layout_editor_absoluteX="115dp" />
+
+<Button
+    android:id="@+id/btnAsistencia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginTop="16dp"
+    android:backgroundTint="@color/black"
+    android:text="Asistencia"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btn_assignments"
+    tools:layout_editor_absoluteX="115dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asistencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAsistencia"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:text="2025 - Los más copados del IFTS"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginBottom="12dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
